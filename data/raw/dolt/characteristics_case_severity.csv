@@ -1,0 +1,6 @@
+source,case_severity,confirmed_cases_count,death_count,observed_patient_days,report_date,place_id
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2019-01-01 00:00:,257,0,0,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Critical,2087,1023,31456,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Mild,36160,0,0,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Missing,257,0,0,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Severe,6168,0,0,2020-02-11 00:00:00 +0000 UTC,1

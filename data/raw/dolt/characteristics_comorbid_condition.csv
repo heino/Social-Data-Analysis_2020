@@ -1,0 +1,8 @@
+source,comorbid_condition,confirmed_cases_count,death_count,observed_patient_days,report_date,place_id
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Cancer (any),107,6,1690,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Cardiovascular disease,873,92,13533,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Chronic respiratory disease,511,32,8083,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Diabetes,1102,80,17940,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Hypertension,2683,161,42603,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Missing,23690,617,331843,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,None,15536,133,242948,2020-02-11 00:00:00 +0000 UTC,1

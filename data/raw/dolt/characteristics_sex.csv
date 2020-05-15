@@ -1,0 +1,3 @@
+source,sex,confirmed_cases_count,death_count,observed_patient_days,report_date,place_id
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,F,21691,370,319546,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,M,22981,653,342063,2020-02-11 00:00:00 +0000 UTC,1

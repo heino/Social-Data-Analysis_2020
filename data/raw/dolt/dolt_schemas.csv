@@ -1,0 +1,19 @@
+type,name,fragment
+view,cases_by_age_range,"select (age/10) as age_range, count(*) as cases from case_details group by age_range order by age_range asc"
+view,cases_by_age_sex,"select age/10 as age_range, sex, count(*) as cases from case_details group by age_range, sex order by age_range asc, sex asc"
+view,cases_by_sex,"select sex, count(*) as cases from case_details group by sex"
+view,current,"select current_cases.country, current_cases.state, substr(cast(greatest(current_cases.`last updated`, current_deaths.`last updated`, current_recovered.`last updated`) as char), 1, 10) as 'last updated', current_cases.cases, current_deaths.deaths, current_recovered.recovered from current_cases left join current_deaths on current_cases.country=current_deaths.country and current_cases.state=current_deaths.state left join current_recovered on current_cases.country=current_recovered.country and current_cases.state=current_recovered.state order by cases desc"
+view,current_cases,"select places.country_region as country, places.province_state as state, max(observation_time) as 'last updated', confirmed_count as cases from cases inner join places on cases.place_id=places.place_id where cases.confirmed_count is not null group by cases.place_id order by cases"
+view,current_deaths,"select places.country_region as country, places.province_state as state, max(observation_time) as 'last updated', death_count as deaths from cases inner join places on cases.place_id=places.place_id where cases.death_count is not null group by cases.place_id order by deaths desc"
+view,current_recovered,"select places.country_region as country, places.province_state as state, max(observation_time) as 'last updated', recovered_count as recovered from cases inner join places on cases.place_id=places.place_id where cases.recovered_count is not null group by cases.place_id order by recovered desc"
+view,deaths_by_age_range,"select (age/10) as age_range, count(*) as deaths from case_details where lower(current_status)='deceased' group by age_range order by age_range asc"
+view,deaths_by_age_sex,"select age/10 as age_range, sex, count(*) as deaths from case_details where lower(current_status)='deceased' group by age_range, sex order by age_range asc, sex asc"
+view,deaths_by_sex,"select sex, count(*) as deaths from case_details where lower(current_status)='deceased' group by sex"
+view,mortality_rate_by_age_range,"select cases_by_age_range.age_range, cases, deaths, (deaths/(cases+.0001)) as mortality_rate from cases_by_age_range left join deaths_by_age_range on cases_by_age_range.age_range=deaths_by_age_range.age_range"
+view,mortality_rate_by_age_sex,"select cases_by_age_sex.age_range as age_range, cases_by_age_sex.sex as sex, cases, deaths, (deaths/(cases+.0001)) as mortality_rate from cases_by_age_sex left join deaths_by_age_sex on cases_by_age_sex.sex=deaths_by_age_sex.sex and cases_by_age_sex.age_range=deaths_by_age_sex.age_range"
+view,mortality_rate_by_sex,"select cases_by_sex.sex, cases, deaths, (deaths/(cases+.0001)) as mortality_rate from cases_by_sex left join deaths_by_sex on cases_by_sex.sex=deaths_by_sex.sex"
+view,mortality_rates,"
+       select *, deaths/(cases + .01) as mortality_rate
+
+       from current order by mortality_rate desc"
+view,time_series,"select country_region, province_state, observation_time, confirmed_count, death_count, recovered_count from cases natural join places order by place_id asc, observation_time asc"

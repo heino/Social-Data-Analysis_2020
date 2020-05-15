@@ -1,0 +1,19 @@
+ECDC: https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide
+
+OWID/testing: https://github.com/owid/covid-19-data/tree/master/public/data 
+
+EBC: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+
+Flights: https://www.flightradar24.com/data/statistics
+Gas: https://datahub.io/core/natural-gas
+Oil: https://datahub.io/core/oil-prices
+
+Countries: https://datahub.io/core/country-codes
+
+
+
+
+
+GIS:
+- vector maps: https://geojson-maps.ash.ms
+- Country Polygons: https://datahub.io/core/geo-countries

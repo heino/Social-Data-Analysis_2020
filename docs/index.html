@@ -1,0 +1,311 @@
+<html>
+
+<head>
+    <title>The Corona Post - The Corona Pandemic: An Outbreak Under Investigation</title>
+    <link rel="stylesheet" href="./lib/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<a id="top"></a>
+
+<!-- NavBar Begin -->
+<nav id="topnavbar" class="navbar navbar-expand-lg   __fixed-top sticky-top navbar-light _bg-light">
+
+    <a class="navbar-brand" href="#">
+        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        The Corona Post
+    </a>
+
+    <div class="collapse navbar-collapse w-100 order-0 order-md-0 multi-collapse2" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#top">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#spread">The&nbsp;Spread</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#impact">The&nbsp;Impact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hdi">HDI & Testing</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-2 multi-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <span class="nav-link">Explainer Notebook: <a class="nav-linkx" href="./explainer.ipynb">Jupyter</a>/<a class="nav-linkx" href="./explainer.html">HTML</a></span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/santisantis/Social-Data-Analysis_2020">Source Code</a>
+            </li>
+        </ul>
+    </div>        
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+</nav>
+<!-- NavBar End -->
+
+    
+    
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+<!-- Content Begin -->
+
+      
+      
+  <a id="corona"></a>
+  <h1 class="display-4" style="margin-top: 1em; margin-bottom: 1ex;">The Corona Pandemic <br><small>- An Outbreak Under Investigation</small></h4>
+  <p class="lead">
+      The outbreak of the coronavirus affected us all. Our daily lives had to be turned around, and restrictions were set by the goverments.
+      We held our breaths, while the total cases and death toll didn't seem to slow down.
+      Now, mid-May, data tell how the pandemic deveoped in the individual countries.
+      This magazine article describe the spread of the pandemic measured by deaths and some of the economic impacts of the pandemic.
+      It also examines the the ammount of testing to the socioeconomic development of the countries.
+    </p>
+
+
+  <a id="spread"></a>
+  <h2 style="margin-top: 1em; margin-bottom: 1ex;">The Spread</h2>
+  <p>As of today, May 15th 2020, the Corona pandemic has spread to an extend were almost all countries has some Corona-related fatalities. However, the spread by no means distributes evenly around the globe. In fact, USA and a handful of European countries top the charts with most corona related deaths. As the virus quickly gained ground in such countries, the number of causalities quickly rose to an alarming level.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="./plots/ecdc-choropleth.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/ecdc-choropleth.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>The Corona pandemic started in China during the end of 2019, and during the winter the virus slowly spread globally. Initially, the rest of the world, looked upon how China handled the outbreak, in a manner that would not have been accepted, at least in the western countries. But as spring came, the virus outbreak that had previously been considered an epidemic, exploded in first Southern Europe, and later on also USA.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <small class="text-muted">NB. A bug in foleum might make the slide disappear when interacting with the map. If this happens, please reload the page...</small>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="./plots/ecdc-choropleth-timed.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/ecdc-choropleth-timed.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>However, countries are no alike - neither culturally, geographically, nor demographically. The size of the countries populations varies quite a lot. While some countries count the population in one-digit millions, others count in billions.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="./plots/ecdc-bar.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/ecdc-bar.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>In the media, stories of astounding numbers of corona-related deaths in Italy, then Spain and later on USA and Great Britain have given the impression that especially USA suffers the pandemic. Measured by the absolute number of deaths, this is indeed correct.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="./plots/ecdc-graph1.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/ecdc-graph1.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>However, when compared relatively by deaths per capita, a quite another story unfolds. Then USA is no longer the most affected county at all. In fact, on the contrary. Surprisingly, a country like Belgium that had otherwise taken a relatively anonymous role the race now takes the lead - with a noticeable distance to the other countries. Also, Sweden now gains it rightful place, while countries such as Denmark and Germany have less corona-related fatalities.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="./plots/ecdc-graph2.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/ecdc-graph2.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>The cause of this variation across countries are many and far beyond the scope of this production. However, some noticeable observations include that the relatively small difference between countries such as Denmark and Sweden. These two countries have had very different strategies, but otherwise are very similar. Although not surprising, it is also clear that countries that did general shutdown of societal function have experienced a decrease in the number of deaths, while the development in other countries has been more linear.</p>
+
+
+
+
+
+  <a id="impact"></a>
+  <h2 style="margin-top: 1em; margin-bottom: 1ex;">The impact</h2>
+  <h5>Flights</h5>
+  <p>The global economy has been gravely affected by the pandemic. For instance, airplane traffic saw an almost abrupt decrease, that was directly linked to spread of the Corona-pandemic and how countries saw the sudden need for a general shutdown of many societal functions.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="./plots/economy-flights.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/economy-flights.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+              
+  <h5>Fossile prices</h5>
+  <p>Also, the fossil fuels market saw an abrupt decline in prices. In fact, the oil market had at some point reached unprecedented negative prices. However, all goods were not affected equally. The natural gas prices for instance, were almost unaffected.</p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" src="./plots/economy-fossile.html"></iframe>
+          </div>
+          <div class="text-right"><small class="text-muted">The plot contains further historic data.</small> <a href="./plots/economy-fossile.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+
+
+
+
+  <a id="stocks"></a>
+  <h5>Stocks values</h5>
+  <p>Stock indexes aggregate infomation about the performance of a group of stocks - typically of group of companies from a given country.
+      When comparing stock indexes from the selected focus countries, it is clear that something has affected the stock market negetively at the same time as the corona epidemy spread to a pandemic. 
+  </p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="./plots/economy-stocks.html"></iframe>
+          </div>
+          <div class="text-right"><small class="text-muted">The plot contains further historic data.</small> <a href="./plots/economy-stocks.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>
+    While is is interesting to investigate, how the pandemic impacted stock prices, the plot does in fact show a rather distorted picture due to the fact that the values are absolute, which makes them hard to compare.
+    By instead plottting the index'es development relative to a certain date, their deveopment relative to each other becomes visible. On January 2nd 2020, the outbreak was still in its early stage, and that date is used as a reference.
+  </p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="./plots/economy-stocks-normalized.html"></iframe>
+          </div>
+      <div class="text-right"><a href="./plots/economy-stocks-normalized.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <div class="float-right">
+  <table class="table table-striped table-hove table-sm table-responsive" align="center"  style="font-size: 60%">
+      <caption></caption>
+      <thead class="thead-dark">
+        <tr>
+            <th scope="col">Country</th>
+            <th scope="col">Index name</th>
+        </tr>
+    <thead>
+    <tbody>
+        <tr>
+            <td>Belgium</td>
+            <td>Euronext BEL 20</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Shanghai Stock Exchange Composite Index</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>DAX German Stock Index</td>
+        </tr>
+        <tr>
+            <td>Denmark</td>
+            <td>OMX COPENHAGEN</td>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>IBEX 35</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Cotation Assistée en Continu</td>
+        </tr>
+        <tr>
+            <td>Great Britain</td>
+            <td>FTSE 100</td>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>FTSE Milano Italia Borsa</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>OMXS 30 Stockholm</td>
+        </tr>
+
+        <tr>
+            <td>United States</td>
+            <td>Standard & Poor's 500</td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>During the initial epedemic that started in China, mainly the Chineese index was affecting. Apparently stock trading in China was closed for a few weeks at the end of January. This would of cause happen to protect the market.
+    When reopened the chinese index started on much lower point in the beginning of February, and almost regained a level equal to at the reference point.
+    Then, as virus spread globally, European and American indexes quickly lose value. The index value of some the focus countries lost an astounding third of their values during the second part of Februar. The chinese index was also affected, but not at all to such an extend<i class="fab fa-swap-opacity .fad"></i>
+    Since then, some of the stocks indexes have recovered better than others.
+    The Danish index is even above the level at the reference point. However, Denmark is an outliner on the plot.
+    While all other indexes has regained some value, their current values are below the reference point.
+    The countries that were affected the hardest (measured by deaths per capital) in the plots above, still suffer a decrease in value of 20-30%, when compared to the reference point at the beginning of the year.
+  </p>
+
+
+
+
+
+  <a id="hdi"></a>
+  <h2>Human Development Index (HDI) and Testing</h2>
+  <p>Human Development Index compares countries on both social and economic level. It is higly relevant for the COVID data to be correlated with it. Furthermore, testing data is the building block of all the other COVID-related metrics. The visuliaztion below, includes 74 countries, but initially only G7 countries are displayed. Countries are grouped into seven development categories, which allow to include or exclude larger groups of them (by clicking on the legend). The axes are customizable, as the reader can pick between HDI and testing values (per capita) for the x-axis. For the y-axis, cases, deaths and test (per capita) can be chosen. Finally more details are show with the hover tool, after navigating to the country of interest with a mouse. It is recommended to use the full screen button, in order to use the visualization to its full potential and take advantage of zoom in the toolbar to better inspect the plot. </p>
+
+  <div class="row">
+      <div class="col-sm-10 offset-sm-1">
+          <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" src="./plots/hdi-scatter.html"></iframe>
+          </div>
+          <div class="text-right"><a href="./plots/hdi-scatter.html" target="_blank"><small class="text-muted">(Click here for full screen)</small></a></div>
+      </div>
+  </div>
+
+  <p>The increasing trend of the COVID data over the HDI index seems peculiar to say the least. Could it be, that developed countries are affected by the COVID more, because of how massive the transfer of people and goods is? That's certainly one hypothesis. However, if the reader takes a look at the tests, another intresting phenomena can be learnt. Testing also increases with HDI value. This might mean, that the reason, behind low amount of cases and deaths in less developed countries, could be that test are not affordable or accessible there. Finally, investigating deaths per capita by tests per capita, we can see how Belgium and Iceland are clear outliers.</p>
+
+
+        
+        
+
+<!-- Content End -->
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script src="./lib/jquery/3.5.1/jquery-3.5.1.slim.min.js"></script>
+<script src="./lib/popper/2.4.0/popper.min.js"></script>
+<script src="./lib/bootstrap/4.4.1/js/bootstrap.min.js"></script>    
+
+<!-- Old style 'hide the navbar' --> 
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            $('.navbar').removeClass("navbar-hide");
+        } else {
+            $('.navbar').addClass("navbar-hide");
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+
+</html>

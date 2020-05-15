@@ -1,0 +1,6 @@
+source,start_date,end_date,confirmed_cases_count,death_count,observed_patient_days,report_date,place_id
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2019-01-01 00:00:00 +0000 UTC,2019-12-31 00:00:00 +0000 UTC,104,15,5142,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2020-01-01 00:00:00 +0000 UTC,2020-01-10 00:00:00 +0000 UTC,653,102,21687,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2020-01-11 00:00:00 +0000 UTC,2020-01-20 00:00:00 +0000 UTC,5417,310,130972,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2020-01-21 00:00:00 +0000 UTC,2020-01-31 00:00:00 +0000 UTC,26468,494,416009,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,2020-02-01 00:00:00 +0000 UTC,2020-02-11 00:00:00 +0000 UTC,12030,102,87799,2020-02-11 00:00:00 +0000 UTC,1

@@ -1,0 +1,6 @@
+source,occupation,confirmed_cases_count,death_count,observed_patient_days,report_date,place_id
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Farmer/laborer,9811,139,137992,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Health worker,1716,5,28069,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Other/none,20503,384,303949,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Retiree,9193,472,137118,2020-02-11 00:00:00 +0000 UTC,1
+http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51,Services industry,3449,23,54484,2020-02-11 00:00:00 +0000 UTC,1
